@@ -26,7 +26,8 @@ $token = "IGQVJVdTdIOVBKa0ljdUVSWkFZAYlJBYmlWdGF3OGw5VlFZAS2libjA0VTZAaNDdZAa3F2
 $limit = 25;
  
 $json_feed_url="https://graph.instagram.com/me/media?fields={$fields}&access_token={$token}&limit={$limit}";
-$json_feed = @file_get_contents($json_feed_url);
+echo $json_feed = @file_get_contents($json_feed_url);
+die;
 $contents = json_decode($json_feed, true, 512, JSON_BIGINT_AS_STRING);
  
 echo "<div class='ig_feed_container'>";
