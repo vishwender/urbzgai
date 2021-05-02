@@ -23,7 +23,7 @@
 // query the user media
 $fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
 $token = "IGQVJVdTdIOVBKa0ljdUVSWkFZAYlJBYmlWdGF3OGw5VlFZAS2libjA0VTZAaNDdZAa3F2X1lQck0wSktCdUdxcHBlVjJzLTZAQeEYzMzh5eUN5Sm5kSmRUeV9SVmRKMGY2UFRZAcU52UVB3UVZAUOVd4d0VQbwZDZD";
-$limit = 10;
+$limit = 25;
  
 $json_feed_url="https://graph.instagram.com/me/media?fields={$fields}&access_token={$token}&limit={$limit}";
 $json_feed = @file_get_contents($json_feed_url);
