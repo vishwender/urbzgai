@@ -1,3 +1,24 @@
+<style type="text/css">
+	.ig_feed_container{
+    width:100%; margin:0 auto; font-family:Arial, Helvetica, sans-serif;
+}
+ 
+.ig_post_container{
+    border: 2px solid #f1f1f1; margin-bottom:25px; margin-left:3%; width:20%; height:550px; float:left;
+}
+ 
+.ig_post_container img{
+    width:100%;
+}
+ 
+.ig_post_container .ig_post_details{
+    padding:15px;
+}
+ 
+.ig_post_container .ig_view_link{
+    margin-top:10px;
+}
+</style>
 <?php 
 // query the user media
 $fields = "id,caption,media_type,media_url,permalink,thumbnail_url,timestamp,username";
